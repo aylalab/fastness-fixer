@@ -707,14 +707,6 @@ input::-moz-focus-inner {
   -webkit-appearance: none;
 }
 
-fieldset {
-  padding-left: 0;
-  padding-right: 0;
-
-  border: 0;
-  border-top: 2px solid #666;
-}
-
 legend {
   color: inherit;
   display: table;
@@ -1095,53 +1087,6 @@ select:focus {
 
 a:focus, [tabindex="0"]:focus {
   outline-offset: 3px;
-}
-
-.skip-links {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.skip-links > li::before {
-  content: none; /* Remove the bullets if nice lists is selected */
-}
-
-.skip-links a,
-.skip-links button {
-  padding: .5em .75em;
-  position: absolute;
-  top: -10em;
-  z-index: 10000; /* To make sure they're always on top */
-  background-color: #000;
-  border: 0;
-  color: #fff;
-  font-size: 1.125rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.skip-links a:focus,
-.skip-links button:focus {
-  outline-offset: 3px;
-  top: 0;
-}
-
-[aria-busy="true"] {
-  cursor: progress;
-}
-
-[aria-controls] {
-  cursor: pointer;
-}
-
-[aria-disabled] {
-  cursor: default;
-}
-
-.print-only {
-  display: none;
-  visibility: hidden;
 }
 
 .page-break-before {
